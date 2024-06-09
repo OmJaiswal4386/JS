@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+    margin: 0;
+}
+
+.canvas{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.buttons{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+#red{
+    background-color: red;
+}
+
+#yellow{
+    background-color: yellow;
+    color: black;
+}
+
+#grey{
+    background-color: grey;
+}
+
+#white{
+    background-color: white;
+    color: black; 
+    border: 1px solid black;
+}
+

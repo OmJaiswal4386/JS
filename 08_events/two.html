@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:#414141;
+        color: aliceblue;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25vh; */
+    }
+
+    #stop{
+        border-radius: 5px;
+        border-color: bisque;
+    }
+
+</style>
+<body>
+    <h1>Welcom to our website</h1>
+    <button id="stop">Stop</button>
+    <script>
+        const Greet = function(){
+            console.log('Hii Omm');
+        }
+
+        const HeadingChange = function(){
+            document.querySelector('h1').innerHTML = "Hii i'm om Jaiswal"
+        }
+        const power = setTimeout(HeadingChange, 2000);
+
+        document.getElementById('stop').addEventListener('click', (e) => {
+            clearTimeout(power)
+            console.log("Stopped");
+        })
+    </script>
+</body>
+</html>
